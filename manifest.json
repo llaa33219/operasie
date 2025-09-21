@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "엔트리-operasie",
+  "version": "1.0",
+  "description": "엔트리에서 특정 함수 내용을 변경하여 여러 기능을 사용할 수 있게 해줍니다",
+  "content_scripts": [
+    {
+      "matches": ["https://playentry.org/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  
+  "web_accessible_resources": [
+    {
+      "resources": ["injected.js", "code.js"],
+      "matches": ["https://playentry.org/*"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
