@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "엔트리-operasie",
-  "version": "1.0",
+  "version": "1.1",
   "description": "엔트리에서 특정 함수 내용을 변경하여 여러 기능을 사용할 수 있게 해줍니다",
   "content_scripts": [
     {
